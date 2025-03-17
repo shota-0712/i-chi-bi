@@ -4,28 +4,25 @@ import { Layout } from './components/Layout';
 import { Home } from './pages/Home';
 
 // Use React.lazy with improved loading strategy
-const Ryokan = lazy(() => 
+const Ryokan = lazy(() =>
   import('./pages/Ryokan').then(module => ({ default: module.Ryokan }))
 );
-const Lunch = lazy(() => 
+const Lunch = lazy(() =>
   import('./pages/Lunch').then(module => ({ default: module.Lunch }))
 );
-const Izakaya = lazy(() => 
+const Izakaya = lazy(() =>
   import('./pages/Izakaya').then(module => ({ default: module.Izakaya }))
 );
-const Activities = lazy(() => 
+const Activities = lazy(() =>
   import('./pages/Activities').then(module => ({ default: module.Activities }))
 );
-const StoreInfo = lazy(() => 
+const StoreInfo = lazy(() =>
   import('./pages/StoreInfo').then(module => ({ default: module.StoreInfo }))
 );
-const Crepe = lazy(() => 
-  import('./pages/Crepe').then(module => ({ default: module.Crepe }))
-);
-const Drinks = lazy(() => 
+const Drinks = lazy(() =>
   import('./pages/Drinks').then(module => ({ default: module.Drinks }))
 );
-const StaffLogin = lazy(() => 
+const StaffLogin = lazy(() =>
   import('./pages/StaffLogin').then(module => ({ default: module.StaffLogin }))
 );
 
@@ -46,9 +43,6 @@ const preloadComponent = (component: string) => {
       break;
     case 'store-info':
       import('./pages/StoreInfo');
-      break;
-    case 'crepe':
-      import('./pages/Crepe');
       break;
     case 'drinks':
       import('./pages/Drinks');
@@ -108,11 +102,6 @@ function App() {
         <Route path="/store-info" element={
           <Suspense fallback={null}>
             <StoreInfo />
-          </Suspense>
-        } />
-        <Route path="/crepe" element={
-          <Suspense fallback={null}>
-            <Crepe />
           </Suspense>
         } />
         <Route path="/drinks" element={

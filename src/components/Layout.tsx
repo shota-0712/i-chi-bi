@@ -42,9 +42,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <Link to="/drinks" className="text-white hover:text-japanese-gold transition">
                 ドリンク
               </Link>
-              <Link to="/crepe" className="text-white hover:text-japanese-gold transition">
-                クレープ
-              </Link>
               <Link to="/ryokan" className="text-white hover:text-japanese-gold transition">
                 宿泊案内
               </Link>
@@ -55,7 +52,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 店舗情報
               </Link>
             </div>
-            <button 
+            <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="md:hidden text-white p-2 -mr-2 focus:outline-none"
               aria-label={isMenuOpen ? 'メニューを閉じる' : 'メニューを開く'}
@@ -65,74 +62,68 @@ export function Layout({ children }: { children: React.ReactNode }) {
             </button>
           </div>
         </div>
-        
+
         {/* Mobile menu */}
-        {isMenuOpen && (
+        {isMenuOpen &amp;&amp; (
           <div className="md:hidden fixed inset-0 top-[72px] bg-japanese-indigo z-50 overflow-y-auto">
             <div className="container mx-auto px-4 py-6">
               <div className="flex flex-col space-y-6">
-                <Link 
-                  to="/lunch" 
+                <Link
+                  to="/lunch"
                   className="text-white hover:text-japanese-gold transition text-lg"
                 >
                   ランチ
                 </Link>
-                <Link 
-                  to="/izakaya" 
+                <Link
+                  to="/izakaya"
                   className="text-white hover:text-japanese-gold transition text-lg"
                 >
                   居酒屋
                 </Link>
-                <Link 
-                  to="/drinks" 
+                <Link
+                  to="/drinks"
                   className="text-white hover:text-japanese-gold transition text-lg"
                 >
                   ドリンク
                 </Link>
-                <Link 
-                  to="/crepe" 
-                  className="text-white hover:text-japanese-gold transition text-lg"
-                >
-                  クレープ
-                </Link>
-                <Link 
-                  to="/ryokan" 
+                <Link
+                  to="/ryokan"
                   className="text-white hover:text-japanese-gold transition text-lg"
                 >
                   宿泊案内
                 </Link>
-                <Link 
-                  to="/activities" 
+                <Link
+                  to="/activities"
                   className="text-white hover:text-japanese-gold transition text-lg"
                 >
                   周辺案内
                 </Link>
-                <Link 
-                  to="/store-info" 
+                <Link
+                  to="/store-info"
                   className="text-white hover:text-japanese-gold transition text-lg"
                 >
                   店舗情報
                 </Link>
                 <div className="pt-4 flex space-x-6">
-                  <a 
-                    href="https://www.instagram.com/ichigo__ichibi/" 
-                    target="_blank" 
+                  <a
+                    href="https://www.instagram.com/ichigo__ichibi/"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-japanese-gold transition"
                   >
                     <Instagram className="h-6 w-6" />
                   </a>
-                  <a 
-                    href="https://x.com/ichigo_ichibi" 
-                    target="_blank" 
+                  <a
+                    href="https://x.com/ichigo_ichibi"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-japanese-gold transition"
                   >
                     <Twitter className="h-6 w-6" />
                   </a>
-                  <a 
-                    href="https://www.facebook.com/share/12DF9aSZmwS/?mibextid=wwXIfr" 
-                    target="_blank" 
+                  <a
+                    href="https://www.facebook.com/share/12DF9aSZmwS/?mibextid=wwXIfr"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-japanese-gold transition"
                   >
@@ -166,7 +157,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 <div>
                   <p className="font-medium">【お食事・居酒屋】</p>
                   <p>ランチ 11:00～14:00 (L.O.13:30)</p>
-                  <p>クレープ 14:00～17:00</p>
                   <p>居酒屋 17:00～22:00 (L.O.21:30)</p>
                 </div>
               </div>
@@ -180,27 +170,27 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 <p className="mt-2 text-sm">Wi-Fi完備・駐車場あり</p>
               </div>
               <div className="mt-4 flex space-x-4">
-                <a 
-                  href="https://www.instagram.com/ichigo__ichibi/" 
-                  target="_blank" 
+                <a
+                  href="https://www.instagram.com/ichigo__ichibi/"
+                  target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
                   className="text-white hover:text-japanese-gold transition"
                 >
                   <Instagram className="h-5 w-5" />
                 </a>
-                <a 
-                  href="https://x.com/ichigo_ichibi" 
-                  target="_blank" 
+                <a
+                  href="https://x.com/ichigo_ichibi"
+                  target="_blank"
                   rel="noopener noreferrer"
                   aria-label="X (Twitter)"
                   className="text-white hover:text-japanese-gold transition"
                 >
                   <Twitter className="h-5 w-5" />
                 </a>
-                <a 
-                  href="https://www.facebook.com/share/12DF9aSZmwS/?mibextid=wwXIfr" 
-                  target="_blank" 
+                <a
+                  href="https://www.facebook.com/share/12DF9aSZmwS/?mibextid=wwXIfr"
+                  target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook"
                   className="text-white hover:text-japanese-gold transition"
@@ -211,7 +201,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </div>
           <div className="text-center mt-8 pt-8 border-t border-gray-800">
-            <p>© 2024 御食事・居酒屋『一期一美』 All Rights Reserved.</p>
+            <p>
+              © 2024 御食事・居酒屋『一期一美』 All Rights Reserved.
+              <span className="ml-4">
+                姉妹店: <a href="https://pal-crepe.com" target="_blank" rel="noopener noreferrer" className="text-japanese-gold hover:underline">パルクレープ</a>
+              </span>
+            </p>
           </div>
         </div>
       </footer>
