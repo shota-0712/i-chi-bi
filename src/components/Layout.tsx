@@ -64,7 +64,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         </div>
 
         {/* Mobile menu */}
-        {isMenuOpen &amp;&amp; (
+        {isMenuOpen ? (
           <div className="md:hidden fixed inset-0 top-[72px] bg-japanese-indigo z-50 overflow-y-auto">
             <div className="container mx-auto px-4 py-6">
               <div className="flex flex-col space-y-6">
@@ -133,7 +133,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
               </div>
             </div>
           </div>
-        )}
+        ) : null}
       </nav>
 
       <main className="relative">

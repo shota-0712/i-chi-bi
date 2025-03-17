@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- 基本的なメタタグ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1B315E">
+    
+    <!-- SEO最適化されたタイトル -->
+    <title>御食事・居酒屋 『一期一美』 - ichibi - | 君津の手打十割そば・やきとり</title>
+    
+    <!-- SEO最適化された説明文 -->
+    <meta name="description" content="【2025年5月オープン】千葉県君津市内蓑輪にある石臼挽き手打十割そばと炭火やきとりの専門店。毎朝4時から打ち始める本格十割そばと、厳選した国産鶏の炭火やきとり。季節の地元食材を活かした創作料理と厳選地酒が楽しめる居酒屋。ランチ11:00～14:00、居酒屋17:00～22:00。">
+    <link rel="canonical" href="https://i-chi-bi.com/">
+    
+    <!-- アイコン設定 -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="/logo.svg">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- 重要なリソースのプリロード -->
+    <link rel="preload" href="/logo.svg" as="image" fetchpriority="high">
+    
+    <!-- フォント最適化: セルフホスティング -->
+    <link rel="preload" href="/fonts/NotoSerifJP-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/NotoSerifJP-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- クリティカルCSS（インライン化） -->
+    <style>
+      /* Web Fontsの定義 - セルフホスティング */
+      @font-face {
+        font-family: 'Noto Serif JP';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('Noto Serif JP Regular'),
+             url('/fonts/NotoSerifJP-Regular.woff2') format('woff2');
+        unicode-range: U+3000-30FF, U+FF00-FFEF, U+4E00-9FAF;
+      }
+      
+      @font-face {
+        font-family: 'Noto Serif JP';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: local('Noto Serif JP Medium'),
+             url('/fonts/NotoSerifJP-Medium.woff2') format('woff2');
+        unicode-range: U+3000-30FF, U+FF00-FFEF, U+4E00-9FAF;
+      }
+
+      @font-face {
+        font-family: 'Noto Serif JP';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: local('Noto Serif JP Bold'),
+             url('/fonts/NotoSerifJP-Bold.woff2') format('woff2');
+        unicode-range: U+3000-30FF, U+FF00-FFEF, U+4E00-9FAF;
+      }
+      
+      /* ローカルフォールバックフォント */
+      :root {
+        --font-serif: 'Noto Serif JP', 'Hiragino Mincho ProN', 'HG明朝E', 'MS P明朝', '游明朝', serif;
+        --color-primary: #1B315E;
+        --color-text: #333333;
+        --color-accent: #D4A017; /* そばのイメージに合わせた黄金色 */
+      }
+      
+      /* 基本スタイル */
+      html {
+        font-size: 16px;
+        -webkit-text-size-adjust: 100%;
+      }
+      
+      body {
+        font-family: var(--font-serif);
+        margin: 0;
+        padding: 0;
+        color: var(--color-text);
+        line-height: 1.6;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      
+      /* 基本レイアウト - CLS防止 */
+      #root {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      
+      /* フォントローディング検出 */
+      .fonts-loaded body {
+        font-family: var(--font-serif);
+      }
+      
+      /* FOUT防止 - フォント読み込み中のスタイル調整 */
+      .font-loading .text-reveal {
+        color: transparent;
+        background-color: #f0f0f0;
+      }
+      
+      /* フォントが読み込まれた後のスタイル */
+      .fonts-loaded .text-reveal {
+        color: var(--color-text);
+        background-color: transparent;
+        transition: color 0.2s ease, background-color 0.2s ease;
+      }
+      
+      /* 白い文字はロード中も白く表示する */
+      .white-text {
+        color: #ffffff !important;
+      }
+    </style>
+    
+    <!-- Open Graph / SNS共有 - SEO最適化 -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://i-chi-bi.com/">
+    <meta property="og:title" content="御食事・居酒屋 『一期一美』 - ichibi - | 君津の手打十割そば・やきとり">
+    <meta property="og:description" content="【2025年5月オープン】千葉県君津市内蓑輪にある石臼挽き手打十割そばと炭火やきとりの専門店。毎朝4時から打ち始める本格十割そばと、厳選した国産鶏の炭火やきとり。季節の地元食材を活かした創作料理と厳選地酒が楽しめる居酒屋。">
+    <meta property="og:image" content="https://i.ibb.co/DmCpYJ1/soba.webp">
+    
+    <!-- Twitter Card - SEO最適化 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="御食事・居酒屋 『一期一美』 - ichibi - | 君津の手打十割そば">
+    <meta name="twitter:description" content="石臼挽きの蕎麦粉を使用した本格十割そばと厳選素材の炭火やきとり。地元千葉の食材を活かした創作料理と厳選地酒をご提供。">
+    <meta name="twitter:image" content="https://i.ibb.co/DmCpYJ1/soba.webp">
+    
+    <!-- SEO関連 - 地域性とメニューのキーワードを強化 -->
+    <meta name="keywords" content="御食事・居酒屋 一期一美, ichibi, 君津, 手打十割そば, やきとり, 居酒屋, 千葉県, 蓑輪, 炭火焼き, 地酒, 日本酒, そば打ち, 創作料理, 石臼挽き">
+    <meta name="author" content="御食事・居酒屋 『一期一美』">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.position" content="35.3333;139.9333">
+    <meta name="geo.region" content="JP-12">
+    <meta name="geo.placename" content="君津市内蓑輪, 千葉県">
+    
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Schema.org JSON-LD - 飲食店情報に特化 -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Restaurant","name":"御食事・居酒屋 『一期一美』","alternateName":["一期一美","ichibi"],"url":"https://i-chi-bi.com/","logo":"https://i-chi-bi.com/logo.svg","image":"https://i.ibb.co/DmCpYJ1/soba.webp","description":"千葉県君津市内蓑輪にある石臼挽き手打十割そばと炭火やきとりの専門店。毎朝4時から打ち始める本格十割そばと、厳選した国産鶏の炭火やきとり。季節の地元食材を活かした創作料理と厳選地酒が楽しめる居酒屋。","address":{"@type":"PostalAddress","streetAddress":"内蓑輪122-1","addressLocality":"君津市","addressRegion":"千葉県","postalCode":"299-1176","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":35.3333,"longitude":139.9333},"telephone":"0439-XX-XXXX","servesCuisine":["手打十割そば","炭火やきとり","日本酒","創作料理","居酒屋"],"priceRange":"¥¥","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"11:00","closes":"14:00","description":"ランチタイム"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"17:00","closes":"22:00","description":"居酒屋タイム"}],"menu":"https://i-chi-bi.com/menu","specialties":"石臼挽きの蕎麦粉を使用した手打十割そばと厳選した国産鶏の炭火やきとり。季節の地元食材を活かした創作料理と厳選地酒をご提供しています。"}
+    </script>
+    
+    <!-- フォントローディング検出スクリプト -->
+    <script>
+      // 初期状態としてフォント読み込み中のクラスを設定
+      document.documentElement.classList.add('font-loading');
+      
+      // フォント読み込み検出
+      if ('fonts' in document) {
+        Promise.all([
+          document.fonts.load('1em "Noto Serif JP"')
+        ]).then(() => {
+          document.documentElement.classList.remove('font-loading');
+          document.documentElement.classList.add('fonts-loaded');
+          
+          // パフォーマンスマーク記録
+          if (window.performance && window.performance.mark) {
+            window.performance.mark('fonts-loaded');
+          }
+        }).catch(() => {
+          // 読み込み失敗時もクラスを更新してUIをブロックしない
+          document.documentElement.classList.remove('font-loading');
+          document.documentElement.classList.add('fonts-failed');
+        });
+      } else {
+        // Font Loading APIが使えない場合は即座に表示
+        document.documentElement.classList.remove('font-loading');
+        document.documentElement.classList.add('fonts-loaded');
+      }
+    </script>
+    
+    <!-- パフォーマンス最適化スクリプト - 遅延読み込み -->
+    <script>
+      // 遅延読み込み管理
+      document.addEventListener('DOMContentLoaded', function() {
+        // 優先度の高いコンテンツが表示された後にタグマネージャーを読み込む
+        const loadGTM = () => {
+          // データレイヤー初期化
+          window.dataLayer = window.dataLayer || [];
+          
+          // GTM非同期読み込み
+          const script = document.createElement('script');
+          script.innerHTML = `
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-NXL4Q3VM');
+          `;
+          document.head.appendChild(script);
+          
+          // noscript要素も追加
+          const noscript = document.createElement('noscript');
+          const iframe = document.createElement('iframe');
+          iframe.src = "https://www.googletagmanager.com/ns.html?id=GTM-NXL4Q3VM";
+          iframe.height = "0";
+          iframe.width = "0";
+          iframe.style.display = "none";
+          iframe.style.visibility = "hidden";
+          noscript.appendChild(iframe);
+          document.body.appendChild(noscript);
+        };
+        
+        // 優先度に基づくGTM読み込み
+        if ('IntersectionObserver' in window) {
+          // LCPが完了した後にGTMを読み込む
+          let hasLoadedGTM = false;
+          
+          const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting && !hasLoadedGTM) {
+              hasLoadedGTM = true;
+              
+              // ユーザーがコンテンツを見た後に読み込み
+              setTimeout(loadGTM, 1000);
+              observer.disconnect();
+            }
+          }, { rootMargin: '200px 0px', threshold: 0.1 });
+          
+          // ヘッダーを観察
+          setTimeout(() => {
+            const header = document.querySelector('header') || document.body;
+            if (header) observer.observe(header);
+          }, 500);
+        } else {
+          // フォールバック: 遅延読み込み
+          setTimeout(loadGTM, 3000);
+        }
+        
+        // 画像の遅延読み込み
+        if ('loading' in HTMLImageElement.prototype) {
+          // ネイティブ遅延読み込み
+          document.querySelectorAll('img[data-src]').forEach(img => {
+            img.src = img.dataset.src;
+            img.loading = 'lazy';
+          });
+        } else {
+          // IntersectionObserverによる遅延読み込み
+          if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries) => {
+              entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                  const lazyImage = entry.target;
+                  if (lazyImage.dataset.src) {
+                    lazyImage.src = lazyImage.dataset.src;
+                    imageObserver.unobserve(lazyImage);
+                  }
+                }
+              });
+            });
+            
+            document.querySelectorAll('img[data-src]').forEach(img => {
+              imageObserver.observe(img);
+            });
+          }
+        }
+      });
+      
+      // Web Vitals測定
+      if ('PerformanceObserver' in window) {
+        // LCP測定
+        new PerformanceObserver((entryList) => {
+          const lcpEntry = entryList.getEntries().pop();
+          if (lcpEntry && window.dataLayer) {
+            window.dataLayer.push({
+              'event': 'web_vitals',
+              'metric_name': 'LCP',
+              'metric_value': lcpEntry.startTime,
+              'metric_delta': lcpEntry.renderTime || lcpEntry.loadTime
+            });
+          }
+        }).observe({type: 'largest-contentful-paint', buffered: true});
+        
+        // FID測定
+        new PerformanceObserver((entryList) => {
+          const fidEntry = entryList.getEntries().pop();
+          if (fidEntry && window.dataLayer) {
+            window.dataLayer.push({
+              'event': 'web_vitals',
+              'metric_name': 'FID',
+              'metric_value': fidEntry.processingStart - fidEntry.startTime,
+              'metric_delta': fidEntry.duration
+            });
+          }
+        }).observe({type: 'first-input', buffered: true});
+        
+        // CLS測定
+        let clsValue = 0;
+        let clsEntries = [];
+        
+        new PerformanceObserver((entryList) => {
+          entryList.getEntries().forEach(entry => {
+            // 突然のレイアウト変更を検出
+            if (!entry.hadRecentInput) {
+              clsValue += entry.value;
+              clsEntries.push(entry);
+            }
+          });
+        }).observe({type: 'layout-shift', buffered: true});
+        
+        // ページ離脱時にCLS値を送信
+        window.addEventListener('visibilitychange', () => {
+          if (document.visibilityState === 'hidden' && window.dataLayer) {
+            window.dataLayer.push({
+              'event': 'web_vitals',
+              'metric_name': 'CLS',
+              'metric_value': clsValue,
+              'metric_delta': clsEntries.length
+            });
+          }
+        });
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-Cn-UQ1B3.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/react-vendor-pZaRkJp-.js">
+    <link rel="modulepreload" crossorigin href="/assets/ui-vendor-xWHi9oXU.js">
+    <link rel="modulepreload" crossorigin href="/assets/utils-DeZn2tlB.js">
+    <link rel="modulepreload" crossorigin href="/assets/Drinks-By_tQZ-y.js">
+    <link rel="modulepreload" crossorigin href="/assets/StoreInfo-DZrRbgOD.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-1YVC14vV.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
